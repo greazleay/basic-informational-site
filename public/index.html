@@ -12,8 +12,15 @@
         <option value="dark">Dark Mode</option>
         <option value="light">Light Mode</option>
     </select>
-    <h1>My First Node server</h1>
-    <p>This is my first node js server</p>
+    <nav>
+        <ul>
+            <li><a href="/" target="_self" rel="noopener noreferrer">Home</a></li>
+            <li><a href="/about.html" target="_self" rel="noopener noreferrer">About</a></li>
+            <li><a href="/contact.html" target="_self" rel="noopener noreferrer">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>Welcome Guest!!!</h1>
+    <p>This is my first node project</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam accusantium aliquid eligendi! Et, quidem reiciendis rem error ullam impedit culpa incidunt voluptas dolore qui autem obcaecati, minus recusandae nam illo.</p>
     <script>
         document.querySelector('select').addEventListener('change', (e) => {
@@ -24,7 +31,7 @@
                 document.body.style.backgroundColor = 'black', 
                 document.body.style.color = 'white' 
             }
-        })
+        });
     </script>
 </body>
 </html>
