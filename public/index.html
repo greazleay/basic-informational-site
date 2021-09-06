@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Node Server</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <select>
+        <option value="dark">Dark Mode</option>
+        <option value="light">Light Mode</option>
+    </select>
+    <h1>My First Node server</h1>
+    <p>This is my first node js server</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam accusantium aliquid eligendi! Et, quidem reiciendis rem error ullam impedit culpa incidunt voluptas dolore qui autem obcaecati, minus recusandae nam illo.</p>
+    <script>
+        document.querySelector('select').addEventListener('change', (e) => {
+            if (e.target.value === 'light') {
+                document.body.style.backgroundColor = 'white', 
+                document.body.style.color = 'black' 
+            } else {
+                document.body.style.backgroundColor = 'black', 
+                document.body.style.color = 'white' 
+            }
+        })
+    </script>
+</body>
+</html>
