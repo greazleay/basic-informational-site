@@ -1,5 +1,30 @@
 body {
     background-color: black;
     color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav {
+    width: 100%;
+    background-color: rgba(95, 86, 108, 0.5);
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 1 0;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    place-content: center center;
+    flex: 1 1 0;
+}
+
+nav ul li {
+    margin: 0 0.7rem;
+}
+
+nav ul li a {
+    text-decoration-line: none;
+    color: white;
 }

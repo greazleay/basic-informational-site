@@ -8,8 +8,31 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <select>
+        <option value="dark">Dark Mode</option>
+        <option value="light">Light Mode</option>
+    </select>
+    <nav>
+        <ul>
+            <li><a href="/" target="_self" rel="noopener noreferrer">Home</a></li>
+            <li><a href="/about.html" target="_self" rel="noopener noreferrer">About</a></li>
+            <li><a href="/contact.html" target="_self" rel="noopener noreferrer">Contact</a></li>
+        </ul>
+    </nav>
     <h1>About this page</h1>
+    <p>This is just a test project to understand Node.js</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae distinctio impedit asperiores rem voluptatibus obcaecati tenetur sapiente autem. Itaque porro vero deserunt voluptate accusamus, deleniti voluptatibus odio facere perferendis dolorum?
     Qui, accusamus soluta culpa distinctio nam veniam rem laudantium debitis a impedit quidem nulla ex minus exercitationem voluptatem quam rerum ipsam iste odit suscipit, repellendus ratione possimus unde eum. Doloremque.</p>
+    <script>
+        document.querySelector('select').addEventListener('change', (e) => {
+            if (e.target.value === 'light') {
+                document.body.style.backgroundColor = 'white', 
+                document.body.style.color = 'black' 
+            } else {
+                document.body.style.backgroundColor = 'black', 
+                document.body.style.color = 'white' 
+            }
+        });
+    </script>
 </body>
 </html>

@@ -8,7 +8,29 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <select>
+        <option value="dark">Dark Mode</option>
+        <option value="light">Light Mode</option>
+    </select>
+    <nav>
+        <ul>
+            <li><a href="/" target="_self" rel="noopener noreferrer">Home</a></li>
+            <li><a href="/about.html" target="_self" rel="noopener noreferrer">About</a></li>
+            <li><a href="/contact.html" target="_self" rel="noopener noreferrer">Contact</a></li>
+        </ul>
+    </nav>
     <h1>Contact Us</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quas sed quo mollitia reiciendis facilis beatae nam, ex porro, omnis nobis repellat magnam odio officiis reprehenderit, culpa corrupti laborum iusto.</p>
+    <script>
+        document.querySelector('select').addEventListener('change', (e) => {
+            if (e.target.value === 'light') {
+                document.body.style.backgroundColor = 'white', 
+                document.body.style.color = 'black' 
+            } else {
+                document.body.style.backgroundColor = 'black', 
+                document.body.style.color = 'white' 
+            }
+        });
+    </script>
 </body>
 </html>
