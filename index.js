@@ -15,13 +15,13 @@ const server = http.createServer((req, res) => {
         case '.css':
             contentType = 'text/css'
             break;
-        case '.js':
+        case '.json':
             contentType = 'application/json'
             break;
-        case '.js':
+        case '.png':
             contentType = 'image/png'
             break;
-        case '.js':
+        case '.jpg':
             contentType = 'image/jpg'
             break;
     }
@@ -50,4 +50,4 @@ const server = http.createServer((req, res) => {
 
 const PORT = process.env.PORT || 8080;
 
-server.listen(PORT, () => console.log(`Server running on port ${PORT}`))
+server.listen(PORT)
