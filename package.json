@@ -4,7 +4,8 @@
   "description": "Basic Information site - to test nodejs",
   "main": "index.js",
   "scripts": {
-    "start": "node index"
+    "start": "node index",
+    "start dev": "nodemon index"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/greazleay/basic-informational-site/issues"
   },
-  "homepage": "https://github.com/greazleay/basic-informational-site#readme"
+  "homepage": "https://github.com/greazleay/basic-informational-site#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12"
+  }
 }
